@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galería Interactiva</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Galería Interactiva</h1>
+
+
+    <section id="controles">
+        <div id="agregar-imagen">
+            <label for="inputUrl">Agregar por URL:</label>
+            <input type="url" id="inputUrl" placeholder="https://ejemplo.com/imagen.jpg">
+            <button id="btn-agregar-url" disabled>Agregar Imagen</button>
+        </div>
+
+        <div id="agregar-archivo">
+            <label for="inputArchivo">Subir archivo (opcional):</label>
+            <input type="file" id="inputArchivo" accept="image/*">
+            <button id="btn-agregar-archivo">Agregar desde Archivo</button>
+        </div>
+
+        <div id="acciones">
+            <button id="btn-eliminar">Eliminar Imagen Seleccionada</button>
+        </div>
+    </section>
+
+    <main>
+        <div id="galeria" class="galeria" aria-live="polite"></div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
